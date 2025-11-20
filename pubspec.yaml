@@ -1,0 +1,42 @@
+name: lecture3
+description: "Simple to-do app that lets user add/remove tasks."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_slidable: ^4.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/icon.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/bg.jpg
+
+  fonts:
+    - family: Mali
+      fonts:
+        - asset: assets/fonts/Mali-Regular.ttf
+        - asset: assets/fonts/Mali-SemiBold.ttf
+          weight: 600
